@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ВКЭ — Быстрый доступ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="glass-panel">
+        <div class="main-container">
+            <header class="header">
+                <img src="logo.svg" alt="Логотип ВКЭ">
+                <h1>Владикавказский колледж электроники</h1>
+            </header>
+
+            <div class="button-group">
+                <button class="redirect-button" data-title="Поступление в колледж"
+                    data-description="Прием заявлений на программы среднего профессионального образования (СПО) в колледжи, техникумы и училища."
+                    data-link="https://www.gosuslugi.ru/10171/1/form">
+                    Поступление в колледж
+                </button>
+
+                <button class="redirect-button" data-title="Наши специальности" 
+                    data-type="list"
+                    data-description="is_prog;inf_sec;set_sys;reklama;design_prom;graph_design;op_is">
+                    Наши специальности и профессии
+                </button>
+
+                <button class="redirect-button" data-title="Дни открытых дверей"
+                    data-description="Узнайте даты дней открытых дверей на нашем официальном сайте."
+                    data-link="https://www.vke-edu.ru/applicants/open-days/">
+                    Дни открытых дверей
+                </button>
+
+                <button class="redirect-button" data-title="Обратная связь"
+                    data-description="Написать вопрос или предложение вы можете через форму на сайте."
+                    data-link="https://www.vke-edu.ru/contacts/index.php">
+                    Обратная связь
+                </button>
+            </div>
+        </div>
+
+        <div id="modal" class="modal-overlay">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <h2 id="modal-title"></h2>
+                    <span class="close-btn" id="closeModalBtn">&times;</span>
+                </div>
+                <img id="modal-img" src="" alt="preview" class="modal-image">
+                <div class="modal-body">
+                    <div id="modal-description"></div>
+                </div>
+                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="action-link">Перейти на сайт</a>
+            </div>
+        </div>
+
+        <div id="sub-modal" class="modal-overlay sub-modal">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <h2 id="sub-modal-title"></h2>
+                    <span class="close-btn" id="closeSubModalBtn">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div id="sub-modal-description"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
